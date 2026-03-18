@@ -462,3 +462,8 @@ body.light .admin-project-item {
     grid-template-columns: 1fr;
   }
 }
+.project-date {
+  font-size: 13px;
+  color: #9aa4b2;
+  margin-top: 6px;
+}

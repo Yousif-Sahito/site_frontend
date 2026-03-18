@@ -47,18 +47,15 @@ const ProjectDetails = () => {
           Live Demo
         </a>
 
-        <div className="details-thumbnail">
-          <img
-            src={`http://localhost:5000${project.thumbnail}`}
-            alt={project.name}
-          />
+              <div className="details-thumbnail">
+          <img src={project.thumbnail} alt={project.name} />
         </div>
 
         <div className="pictures-grid">
           {project.pictures?.map((pic, index) => (
             <img
               key={index}
-              src={`http://localhost:5000${pic}`}
+              src={pic}
               alt={`project-${index}`}
             />
           ))}
