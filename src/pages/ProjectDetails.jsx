@@ -34,7 +34,7 @@ const ProjectDetails = () => {
           <strong>Details:</strong> {project.details}
         </p>
 
-        <p>
+        <p className="project-full-description">
           <strong>Description:</strong> {project.description}
         </p>
 
@@ -47,7 +47,7 @@ const ProjectDetails = () => {
           Live Demo
         </a>
 
-              <div className="details-thumbnail">
+        <div className="details-thumbnail">
           <img src={project.thumbnail} alt={project.name} />
         </div>
 
