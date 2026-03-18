@@ -9,7 +9,7 @@ const Navbar = () => {
       </Link>
 
       <div className="nav-right">
-        <Link to="/admin/login">Admin</Link>
+        <Link to="/admin/login">.</Link>
         <ThemeToggle />
       </div>
     </nav>
