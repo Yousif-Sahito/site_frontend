@@ -5,6 +5,7 @@ const ProjectCard = ({ project }) => {
 
   return (
     <div className="project-card">
+
       <img
         src={project.thumbnail}
         alt={project.name}
@@ -16,9 +17,26 @@ const ProjectCard = ({ project }) => {
 
       <p className="project-date">{formattedDate}</p>
 
-      <Link to={`/project/${project._id}`} className="view-btn">
-        View Details
-      </Link>
+      {/* BUTTONS */}
+      <div className="project-buttons">
+
+        <Link
+          to={`/project/${project._id}`}
+          className="btn btn-details"
+        >
+          View Details
+        </Link>
+
+        <a
+          href={project.liveDemoUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="btn btn-demo"
+        >
+          Live Demo
+        </a>
+
+      </div>
     </div>
   );
 };

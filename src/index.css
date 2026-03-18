@@ -487,3 +487,35 @@ body.light .admin-project-item {
   white-space: pre-line;
   line-height: 1.8;
 }
+
+.project-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.btn {
+  flex: 1;
+  text-align: center;
+  padding: 12px 0;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-details {
+  background: #2563eb;
+  color: white;
+}
+
+.btn-demo {
+  background: #10b981;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
